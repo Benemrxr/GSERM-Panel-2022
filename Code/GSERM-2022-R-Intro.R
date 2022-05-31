@@ -291,7 +291,6 @@ GOPJustices <- SCOTUS[SCOTUS$GOP==1,]
 View(GOPJustices)
 
 # PLOTTING / GRAPHS       ####################
-
 #
 # R / RStudio is fantastic for visualizing and
 # plotting / graphing data. This is a fast
