@@ -317,7 +317,7 @@ with(VB, plot(Year,WinPct,t="l"))
 # to make it nicer looking:
 
 with(VB, plot(Year,WinPct,t="l",lwd=2,col="navy",
-      main="PSU Women's Volleyball Winning\nPercentages, 2005-2014",
+      main="PSU Women's Volleyball Winning\nPercentages, 2005-2021",
       xlab="Season",ylab="Winning Percentage"))
 
 # We can do a similar thing with the 
@@ -333,7 +333,7 @@ with(SCOTUS, plot(CRPercent~GOP))
 #
 # LOOPS AND BASIC PROGRAMMING ###############
 # 
-# We'll do a lot of work with simulations
+# We'll do some work with simulations
 # in this course. That means repetition,
 # and that means loops. The basic structure
 # of a loop in R is:
