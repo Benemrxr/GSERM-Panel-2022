@@ -1,5 +1,5 @@
 #########################################################
-# GSERM - Ljubljana (2022)
+# GSERM - St. Gallen (2022)
 #
 # Analyzing Panel Data
 # Prof. Christopher Zorn
