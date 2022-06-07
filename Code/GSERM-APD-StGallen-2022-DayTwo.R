@@ -40,6 +40,30 @@ options(digits = 3) # show fewer decimal places
 
 # setwd("~/Dropbox (Personal)/GSERM/Panel-2021/Notes and Slides")
 #=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# FE plot:
+
+i<-1:4
+t<-20
+NT<-t*max(i)
+set.seed(7222009)
+df<-data.frame(i=rep(i,t),
+               t=rep(1:t,max(i)),
+               X=runif(NT))
+df$Y=1+2*i+4*df$X+runif(NT)
+df<-df[order(df$i,df$t),] # sort
+
+pdf("FEIntuition.pdf",7,6)
+par(mar=c(4,4,2,2))
+with(df, plot(X,Y,pch=i+14,col=i,
+              xlim=c(0,1),ylim=c(3,14)))
+abline(a=3.5,b=4,lwd=2,lty=1,col=1)
+abline(a=5.5,b=4,lwd=2,lty=2,col=2)
+abline(a=7.5,b=4,lwd=2,lty=3,col=3)
+abline(a=9.5,b=4,lwd=2,lty=4,col=4)
+legend("bottomright",bty="n",col=1:4,lty=1:4,
+       lwd=2,legend=c("i=1","i=2","i=3","i=4"))
+dev.off()
+
 # World Development Indicators (WDI) data ####
 #
 # The WDI data we'll be using for this class can
